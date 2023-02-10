@@ -1,6 +1,7 @@
 body {
     margin: 0;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -8,7 +9,7 @@ body {
     background-color: #272627;
     padding: 0;
     width: 6330px;
-    height: 5120px;
+    height: 6000px;
     position: relative;
 }
 
@@ -21,7 +22,7 @@ body {
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
     width: 100%;
-    height: 100%;
+    height: 6000px;
     position: absolute;
 }
 
@@ -48,7 +49,7 @@ section {
     position: absolute;
     width: 1600px;
     height: 770px;
-    top: 10px;
+    top: 2%;
     left: 20px;
 }
 
@@ -60,14 +61,21 @@ img {
 
 #element2 {
     position: absolute;
-    top: 76%;
+    top: 100%;
     left: 100%;
     width: 50%;
 }
 
-.section-2 {
-    width: 20%;
+.wrapper-2 {
+    display: flex;
+    width: 1600px;
     position: absolute;
-    left: 1%;
+    left: -20%;
     top: 20%;
+    flex-direction: column;
+}
+
+.allignment-container {
+    width: 1800px;
+    margin: 0 auto;
 }
