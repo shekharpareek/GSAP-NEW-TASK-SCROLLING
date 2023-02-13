@@ -7,65 +7,97 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link href="./style.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&family=Sanchez&display=swap"
+            rel="stylesheet">
+
     </head>
 
     <body>
         <div class="container">
-            <div class="grid-lines-bg">
+            <header>
+                <nav class="nav-bar">
+                    <ul class="nav-items"></ul>
+                    <li class="item">Home</li>
+                    <li class="item">Gallery</li>
+                    <li class="item">Blog</li>
+                    <li class="item">About</li>
+                    <li class="item">Contact</li>
+                </nav>
+            </header>
+            <div class="main-bg">
                 <div class="allignment-container">
                     <div class="wrapper">
-                        <div id="element1">
-                            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                                adipisci
-                                velit..."
-                                "There is no one who loves pain itself, who seeks after it and wants to have it, simply
-                                because
-                                it
-                                is pain..."
-                            </p>
+                        <div class="d-flex" id="element1">
+                            <div class="content">
+                                <h4>The Process to</h4>
+                                <h1>Evolve</h1>
+                                <h4>As a creator</h4>
+                                <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci
+                                    velit..." "There is no one who loves pain itself, who seeks after it and wants to
+                                    have
+                                    it, simply because it is pain..."
+                                </p>
+                            </div>
+
+                            <div class="img-wrapper">
+                                <img src="./dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg">
+                            </div>
                         </div>
-                        <p id="element2" class="left-content">Neque porro quisquam est qui dolorem ipsum quia
-                            dolor sit
-                            amet,am shekhar
-                            consectetur,
-                            adipisci velit..."
-                            "There is no one who loves pain itself, who seeks after it and wants to have it, simply
-                            because
-                            it
-                            is pain..."</p>
+                        <div class="dot-bg"></div>
+                        <p id="element2" class="left-content transform">Neque porro quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain. Neque porro
+                            quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain. Neque porro
+                            quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain. Neque porro
+                            quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain. Neque porro
+                            quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain."</p>
                     </div>
-                    <div class="wrapper-2 element-3">
+                    <div class="wrapper-2">
                         <p>
-                            Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                            amet,am shekhar
-                            consectetur,
-                            adipisci velit..."
-                            "There is no one who loves pain itself, who seeks after it and wants to have it, simply
-                            because
-                            it
-                            is pain..."
+                            Neque porro quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain. Neque porro
+                            quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain. Neque porro
+                            quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain. Neque porro
+                            quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain. Neque porro
+                            quisquam est qui dolorem ipsum quia
+                            dolor sit amet,am shekhar consectetur, adipisci velit..." "There is no one who loves pain
+                            itself, who seeks after it and wants to have it, simply because it is pain."
                         </p>
                         <p>
-                            Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                            amet,am shekhar
-                            consectetur,
-                            adipisci velit..."
-                            "There is no one who loves pain itself, who seeks after it and wants to have it, simply
-                            because
-                            it
-                            is pain..."
+                            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,am shekhar consectetur,
+                            adipisci velit..." "There is no one who loves pain itself, who seeks after it and wants to
+                            have it, simply because it is pain..."
                         </p>
                     </div>
                 </div>
             </div>
         </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <script rel="preload" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-        <script rel="preload" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-        <script rel="preload" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
-        <script rel="preload" src="./scrollbehaviour.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+            integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script rel="preload" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script rel="preload" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+        <!-- <script rel="preload" src="./scrollbehaviour.js" defer></script> -->
         <script src="app.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     </body>
 

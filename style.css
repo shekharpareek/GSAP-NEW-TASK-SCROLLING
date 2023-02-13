@@ -2,23 +2,27 @@ body {
     margin: 0;
     position: relative;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+* {
+    font-family: 'Sanchez', serif;
 }
 
 .container {
     margin: 0;
-    background-color: #272627;
+    background-image: url("./jay-eshie-IkI-K-ORMtE-unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     padding: 0;
     width: 6330px;
     height: 6000px;
     position: relative;
 }
 
-.grid-lines-bg {
-    background-image:
-        linear-gradient(rgba(255, 255, 255, .07) 2px, transparent 2px),
-        linear-gradient(90deg, rgba(255, 255, 255, .07) 2px, transparent 2px),
-        linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px);
+.main-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, .07) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, .07) 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px);
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
     width: 100%;
@@ -30,10 +34,31 @@ body {
     border: 2px solid white;
 }
 
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
 p {
     color: white;
-    font-size: 49px;
+    font-size: 19px;
+    margin-left: 0;
+    width: 169%;
+    letter-spacing: 2.75px !important;
 }
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrapper>img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 252px;
+}
+
 
 section {
     padding-top: 50px;
@@ -48,34 +73,93 @@ section {
 .wrapper {
     position: absolute;
     width: 1600px;
-    height: 770px;
+    height: auto;
     top: 2%;
-    left: 20px;
+    left: 0.5%;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content {
+    display: block;
+    width: 24%;
+    padding-left: 52px;
+    color: orange;
+    letter-spacing: 5.75px;
+    line-height: 18px;
 }
+
+.content>h4 {
+    font-size: 30px;
+}
+
+.content>h1 {
+    font-size: 90px;
+}
+
+.left-content {
+    display: block;
+    width: 80%;
+    line-height: 18px;
+}
+
 
 #element2 {
     position: absolute;
-    top: 100%;
-    left: 100%;
-    width: 50%;
+    top: 147%;
+    left: 95%;
+    width: 66%;
+    height: 520px;
+    margin-top: 170px;
 }
 
 .wrapper-2 {
     display: flex;
-    width: 1600px;
+    width: 13%;
     position: absolute;
     left: -20%;
-    top: 20%;
+    top: 10%;
     flex-direction: column;
+    margin-top: 170px;
+}
+
+.transform {
+    top: 0%;
 }
 
 .allignment-container {
     width: 1800px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    z-index: 99;
+    width: 100%;
+
+}
+
+header nav {
+    color: white;
+    margin: 20px auto;
+    width: 1300px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+
+}
+
+header nav .nav-items {
+    display: flex;
+    align-items: center;
+
+}
+
+.item {
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
 }
