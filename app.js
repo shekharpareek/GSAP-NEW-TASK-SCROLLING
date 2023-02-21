@@ -35,7 +35,7 @@ tr1.to(".content--1", {
     ease: "SlowMo.easeInOut",
     stagger: 2,
     toggleActions: "restart none none none",
-    markers: true,
+    markers: false,
     paused: true,
   },
 });
@@ -55,7 +55,7 @@ tr1.to(".content--2", {
     ease: "none",
     stagger: 2,
     toggleActions: "restart none none none",
-    markers: true,
+    markers: false,
   },
 });
 tr1.to(".content--2", {
@@ -77,7 +77,7 @@ tr1.to(".content--2", {
     ease: "none",
     stagger: 2,
     toggleActions: "restart none none none",
-    markers: true,
+    markers: false,
   },
 });
 tr1.to(".content--3", {
@@ -94,7 +94,7 @@ tr1.to(".content--3", {
     ease: "none",
     stagger: 2,
     toggleActions: "restart none none none",
-    markers: true,
+    markers: false,
   },
 });
 tr1.to(".content--3", {
@@ -111,6 +111,6 @@ tr1.to(".content--3", {
     ease: "none",
     stagger: 2,
     toggleActions: "restart none none none",
-    markers: true,
+    markers: false,
   },
 });

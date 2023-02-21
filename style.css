@@ -100,7 +100,12 @@ header .nav-bar {
 section {
     width: 100%;
     background-color: rgb(167, 167, 231);
-    height: 100wh;
+    height: 100vw;
+}
+
+.content {
+    display: block;
+    padding: 30px;
 }
 
 section .container {
@@ -115,7 +120,7 @@ section .container {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
+    height: 70vh;
 }
 
 .wrapper h4 {
@@ -129,12 +134,15 @@ section .container {
     background-color: rgb(167, 167, 231);
 }
 
+.gallery>img {
+    width: 30%;
+}
+
 .wrapper img {
     max-width: 100%;
 }
 
 .content--2 {
-    padding: 90px;
     background-color: rgb(167, 167, 231);
 }
 
