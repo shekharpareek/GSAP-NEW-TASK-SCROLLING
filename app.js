@@ -1,85 +1,111 @@
 gsap.registerPlugin(ScrollTrigger);
-
-const wrappers = gsap.utils.toArray(".wrapper");
 const transform = gsap.utils.toArray(".transform");
+const wrappers = gsap.utils.toArray(".wrapper");
 
-// First, select the element you want to animate
-// Create a timeline for the animation
-t1 = gsap.timeline({});
+// Gsap set the elements initial values
+gsap.set(".content--2", {
+  xPercent: 50,
+});
+gsap.set(".content--3", {
+  xPercent: -50,
+});
+const tr1 = gsap.timeline({
+  delay: 0.5,
+  value: 100,
+});
 
-// Animation - 1;
-
-gsap.to(".container", {
-  duration: 7.0,
-  x: -400,
-  y: -300,
-  transformOrigin: "center left",
+tr1.to(".content--1", {
+  duration: 120,
+  x: "-20%",
+  y: "-10%",
+  ease: "power4",
+  transformOrigin: "center center",
   scrollTrigger: {
-    trigger: "container",
+    trigger: ".wrapper",
     start: "top",
-    end: "+200",
+    end: "=+2000",
     scrub: true,
-    duration: 10,
-    ease: "power3.in",
+    duration: 90,
+    ease: "SlowMo.easeInOut",
     stagger: 2,
     toggleActions: "restart none none none",
     markers: true,
-    pin: true,
+    paused: true,
   },
 });
-// gsap.to(wrappers[0], {
-//   duration: 6.0, // the animation should last 1 second
-//   x: -950,
-//   y: -600,
-//   transformOrigin: "center center", // set the rotation origin to the center of the element
-//   ease: "slow",
-//   scrollTrigger: {
-//     trigger: ".container",
-//     start: "top center",
-//     end: "+3200",
-//     scrub: true,
-//     duration: 10,
-//     ease: "slow",
-//     stagger: 2,
-//     toggleActions: "restart none none none",
-//     markers: true,
-//     pin: true,
-//   },
-// });
-// // // Animation - 2;
-// gsap.to(wrappers[1], {
-//   duration: 15,
-//   margin: 70,
-//   y: -300,
-//   x: -100,
-//   scrollTrigger: {
-//     trigger: ".content--2",
-//     start: "top center",
-//     end: "+4000",
-//     scrub: true,
-//     duration: 10,
-//     ease: "slow",
-//     speed: "slow",
-//     stagger: 2,
-//     toggleActions: "restart none none none",
-//     markers: true,
-//     pin: true,
-//   },
-//   transformOrigin: "right top",
-// });
-// gsap.to(transform[0], {
-//   duration: 8.0,
-//   y: -500,
-//   x: 500,
-//   scrollTrigger: {
-//     trigger: "transform",
-//     start: "top center",
-//     end: "+12000",
-//     scrub: true,
-//     duration: 11,
-//     ease: "slow",
-//     stagger: 3,
-//     markers: true,
-//     pin: true,
-//   },
-// });
+tr1.to(".content--2", {
+  duration: 120,
+  // x: "-100%",
+  // scale: 0,
+  xPercent: 0,
+  ease: "none",
+  transformOrigin: "center center",
+  scrollTrigger: {
+    trigger: ".wrapper",
+    start: "=top",
+    bottom: "=+2000",
+    scrub: true,
+    duration: 90,
+    ease: "none",
+    stagger: 2,
+    toggleActions: "restart none none none",
+    markers: true,
+  },
+});
+tr1.to(".content--2", {
+  duration: 120,
+  // x: "-100%",
+  // scale: 0,
+  y: "-50%",
+  x: "50%",
+  ease: "slow",
+  value: 20,
+  transformOrigin: "center right",
+  scrollTrigger: {
+    trigger: ".content--2",
+    start: "top",
+    bottom: "=+7000",
+    scrub: true,
+    duration: 90,
+    delay: 0.5,
+    ease: "none",
+    stagger: 2,
+    toggleActions: "restart none none none",
+    markers: true,
+  },
+});
+tr1.to(".content--3", {
+  duration: 120,
+  xPercent: 0,
+  x: "5%",
+  y: "36%",
+  transformOrigin: "center center",
+  scrollTrigger: {
+    trigger: ".content--3",
+    start: "top",
+    bottom: "=+6000",
+    scrub: true,
+    duration: 90,
+    ease: "none",
+    stagger: 2,
+    toggleActions: "restart none none none",
+    markers: true,
+  },
+});
+tr1.to(".content--3", {
+  duration: 120,
+  x: "-20%",
+  y: "-10%",
+  transformOrigin: "center center",
+  scrollTrigger: {
+    trigger: ".content--3",
+    start: "top",
+    bottom: "bottom",
+    scrub: true,
+    duration: 90,
+    ease: "none",
+    stagger: 2,
+    toggleActions: "restart none none none",
+    markers: true,
+  },
+});
