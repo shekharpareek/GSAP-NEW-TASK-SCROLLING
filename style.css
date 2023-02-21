@@ -13,6 +13,16 @@ body::-webkit-scrollbar {
     /* Safari and Chrome */
 }
 
+img {
+    max-width: 100%;
+}
+
+.d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
     width: 100%;
     background-color: rgba(248, 244, 244, 0.4);
@@ -33,7 +43,8 @@ header .nav-bar .nav-items {
     justify-content: space-evenly;
     width: 1060px;
     list-style-type: none;
-    margin-bottom: 5px;
+    margin-bottom: 13px;
+    margin-top: 0;
 }
 
 header .nav-bar {
@@ -46,15 +57,11 @@ header .nav-bar {
     padding: 34px 12px 7px 12px;
     border-top: none;
     cursor: pointer;
-    /*
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 7px; */
+
 }
 
 .item:hover {
-
+    border-radius: 30px;
     background-color: aqua;
     animation: wave 4s ease-in-out infinite;
 

@@ -6,8 +6,14 @@ const wrappers = gsap.utils.toArray(".wrapper");
 gsap.set(".content--2", {
   xPercent: 50,
 });
+gsap.set(".content--2", {
+  xPercent: 50,
+});
 gsap.set(".content--3", {
-  xPercent: -50,
+  xPercent: -20,
+});
+gsap.set(".content--4", {
+  xPercent: 100,
 });
 const tr1 = gsap.timeline({
   delay: 0.5,
@@ -23,7 +29,7 @@ tr1.to(".content--1", {
   scrollTrigger: {
     trigger: ".wrapper",
     start: "top",
-    end: "=+2000",
+    end: "bottom",
     scrub: true,
     duration: 90,
     ease: "SlowMo.easeInOut",
@@ -42,8 +48,8 @@ tr1.to(".content--2", {
   transformOrigin: "center center",
   scrollTrigger: {
     trigger: ".wrapper",
-    start: "=top",
-    bottom: "=+2000",
+    start: "top",
+    bottom: "bottom",
     scrub: true,
     duration: 90,
     ease: "none",
@@ -64,7 +70,7 @@ tr1.to(".content--2", {
   scrollTrigger: {
     trigger: ".content--2",
     start: "top",
-    bottom: "=+7000",
+    bottom: "bottom",
     scrub: true,
     duration: 90,
     delay: 0.5,
@@ -76,14 +82,13 @@ tr1.to(".content--2", {
 });
 tr1.to(".content--3", {
   duration: 120,
-  xPercent: 0,
-  x: "5%",
-  y: "36%",
+  xPercent: 30,
+  yPercent: 80,
   transformOrigin: "center center",
   scrollTrigger: {
     trigger: ".content--3",
     start: "top",
-    bottom: "=+6000",
+    bottom: "bottom",
     scrub: true,
     duration: 90,
     ease: "none",
@@ -96,7 +101,7 @@ tr1.to(".content--3", {
   duration: 120,
   x: "-20%",
   y: "-10%",
-  transformOrigin: "center center",
+  transformOrigin: "center left",
   scrollTrigger: {
     trigger: ".content--3",
     start: "top",
