@@ -114,3 +114,20 @@ tr1.to(".content--3", {
     markers: false,
   },
 });
+tr1.to(".nav-items", {
+  duration: 1,
+  width: "100%",
+  scrollTrigger: {
+    trigger: ".nav",
+    start: "top",
+    scrub: true,
+    duration: 20,
+    ease: SlowMo.ease.config(0.7, 0.7, 0.7, 0.7, false),
+    stagger: 1,
+  },
+});
+
+window.onload = function () {
+  var timelite = new TimelineMa();
+  TweenLite.from("", 2, { opacity: 0, left: "300px" });
+};

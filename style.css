@@ -6,6 +6,7 @@ body {
     margin: 0;
     position: relative;
     scroll-behavior: smooth;
+    background-color: rgb(167, 167, 231);
 }
 
 body::-webkit-scrollbar {
@@ -25,7 +26,6 @@ img {
 
 header {
     width: 100%;
-    background-color: rgba(248, 244, 244, 0.4);
     backdrop-filter: blur(13px);
     position: fixed;
     top: 0;
@@ -34,7 +34,7 @@ header {
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous';
 }
 
 header .nav-bar .nav-items {
@@ -44,6 +44,7 @@ header .nav-bar .nav-items {
     width: 1060px;
     list-style-type: none;
     margin-bottom: 13px;
+    background-color: rgba(248, 244, 244, 0.4);
     margin-top: 0;
 }
 
@@ -106,6 +107,7 @@ section {
 .content {
     display: block;
     padding: 30px;
+    position: relative;
 }
 
 section .container {
@@ -124,14 +126,19 @@ section .container {
 }
 
 .wrapper h4 {
-    font-size: 51px;
+    font-size: 94px;
     font-weight: 700;
-    color: #020202;
+    color: rgba(248, 244, 244, 0.4);
 }
 
 .content--1 {
     padding: 70px;
     background-color: rgb(167, 167, 231);
+}
+
+.gallery {
+    position: absolute;
+    top: 0;
 }
 
 .gallery>img {
