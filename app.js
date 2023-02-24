@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 const transform = gsap.utils.toArray(".transform");
 const wrappers = gsap.utils.toArray(".wrapper");
 
+// GSAP timelite (working on window load)
 // Gsap set the elements initial values
 gsap.set(".content--2", {
   xPercent: 50,
@@ -15,10 +16,7 @@ gsap.set(".content--3", {
 gsap.set(".content--4", {
   xPercent: 100,
 });
-const tr1 = gsap.timeline({
-  delay: 0.5,
-  value: 100,
-});
+const tr1 = gsap.timeline({});
 
 tr1.to(".content--1", {
   duration: 120,
@@ -32,7 +30,7 @@ tr1.to(".content--1", {
     end: "bottom",
     scrub: true,
     duration: 90,
-    ease: "SlowMo.easeInOut",
+    end: "+=" + window.innerHeight * 2,
     stagger: 2,
     toggleActions: "restart none none none",
     markers: false,
@@ -70,6 +68,7 @@ tr1.to(".content--2", {
   scrollTrigger: {
     trigger: ".content--2",
     start: "top",
+    end: "+=" + window.innerHeight * 4,
     bottom: "bottom",
     scrub: true,
     duration: 90,
@@ -115,14 +114,17 @@ tr1.to(".content--3", {
   },
 });
 tr1.to(".nav-items", {
-  duration: 1,
+  duration: 20,
   width: "100%",
   scrollTrigger: {
     trigger: ".nav",
     start: "top",
+    end: "100px",
     scrub: true,
     duration: 20,
-    ease: "slow",
+    ease: Power4.easeIn,
     stagger: 1,
   },
 });
+
+AOS.init();
