@@ -98,9 +98,9 @@ tr1.to(".content--3", {
 });
 tr1.to(".content--3", {
   duration: 120,
-  x: "-20%",
+  x: "-30%",
   y: "-10%",
-  transformOrigin: "center left",
+  transformOrigin: "center center",
   scrollTrigger: {
     trigger: ".content--3",
     start: "top",

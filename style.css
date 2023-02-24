@@ -219,3 +219,7 @@ section .container {
     background-color: unset;
     padding-bottom: 20px;
 }
+
+.content--4 {
+    opacity: 0;
+}
